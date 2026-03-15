@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Website</title>
+<meta charset="UTF-8">
+<title>Mesaj</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#f0f0f0;
+    padding-top:150px;
+}
+
+h1{
+    font-size:80px;
+}
+
+button{
+    font-size:25px;
+    padding:15px 40px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#4CAF50;
+    color:white;
+}
+
+#mesaj{
+    margin-top:40px;
+    font-size:40px;
+    display:none;
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Welcome to the Message Website!</h1>
-    <p>This website is currently under construction.</p>
+
+<h1>CITEȘTE</h1>
+
+<button onclick="arataMesaj()">Apasă</button>
+
+<div id="mesaj">
+Te iubesc sora mea dragă ❤️
+</div>
+
+<script>
+function arataMesaj(){
+    document.getElementById("mesaj").style.display = "block";
+}
+</script>
+
 </body>
 </html>
